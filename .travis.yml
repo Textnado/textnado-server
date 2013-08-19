@@ -1,0 +1,9 @@
+language: python
+script: echo "Passed"
+notifications:
+  hipchat:
+    rooms:
+      secure: b0mG0KNPizy13KjF0MPH369wxfycfFL1CLE77ZEHh8l67vXLS0B3OzlQz1EfzbJ9JaBoU//1zNiD81RTQJj55TwadHbMKEBF5jjECZB8n/AslvYp/sERmHEaSUgdOTftiToudteuTZe14rZ/4ze2cmseFqVvRIcKu27jrjst9HY=
+    template:
+    - ! '%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %{message} (<a href="%{build_url}">Details</a>/<a href="%{compare_url}">Change view</a>)'
+    format: html
